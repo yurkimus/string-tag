@@ -1,0 +1,18 @@
+{
+  "name": "string-tag",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "https://github.com/yurkimus/string-tag#readme",
+  "bugs": {
+    "url": "https://github.com/yurkimus/string-tag/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yurkimus/string-tag.git"
+  },
+  "license": "MIT",
+  "author": "yurkimus@gmail.com",
+  "exports": {
+    ".": "./source/index.js"
+  }
+}
