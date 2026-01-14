@@ -1,4 +1,22 @@
-export const toStringTag = Object.freeze(x => Object.prototype.toString.call(x).slice(8, -1))
+/**
+ * @example
+ * toStringTag([]) // => 'Array'
+ * toStringTag({}) // => 'Object'
+ * toStringTag(null) // => 'Null'
+ * toStringTag() // => 'Undefined'
+ */
+export const toStringTag = Object.freeze(value => Object.prototype.toString.call(value).slice(8, -1))
 
-export const isStringTag = Object.freeze((tag, x) => tag === Object.prototype.toString.call(x).slice(8, -1))
+/**
+ * @example
+ * isStringTag('Array', []) // => true
+ * isStringTag('Object', {}) // => true
+ * isStringTag('Null', null) // => true
+ * isStringTag('Undefined') // => true
+ */
+export const isStringTag = Object.freeze((tag, value) => {
+  if (typeof tag !== 'string')
+    throw TypeError(`Parameter 'tag' must be a string, got: '${tag}'.`)
 
+  return tag === toStringTag(value)
+})
