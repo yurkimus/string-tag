@@ -1,6 +1,6 @@
 {
   "name": "@yurkimus/string-tag",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "JavaScript utilities for getting and checking the string tag of a value.",
   "homepage": "https://github.com/yurkimus/string-tag#readme",
   "bugs": {
