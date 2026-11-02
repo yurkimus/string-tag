@@ -1,4 +1,6 @@
 /**
+ * @param {*} value
+ * 
  * @example
  * toStringTag([]) // => 'Array'
  * toStringTag({}) // => 'Object'
@@ -8,15 +10,13 @@
 export const toStringTag = value => Object.prototype.toString.call(value).slice(8, -1)
 
 /**
+ * @param {string} stringTag
+ * @param {*} value
+ * 
  * @example
  * isStringTag('Array', []) // => true
  * isStringTag('Object', {}) // => true
  * isStringTag('Null', null) // => true
  * isStringTag('Undefined') // => true
  */
-export const isStringTag = (tag, value) => {
-  if (typeof tag !== 'string')
-    throw TypeError(`Parameter 'tag' must be a string, got: '${tag}'.`)
-
-  return tag === toStringTag(value)
-}
+export const isStringTag = (stringTag, value) => stringTag === toStringTag(value)
