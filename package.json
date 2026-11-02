@@ -1,7 +1,7 @@
 {
   "name": "@yurkimus/string-tag",
   "version": "0.0.4",
-  "description": "",
+  "description": "JavaScript utilities for getting and checking the string tag of a value.",
   "homepage": "https://github.com/yurkimus/string-tag#readme",
   "bugs": {
     "url": "https://github.com/yurkimus/string-tag/issues"
@@ -10,6 +10,18 @@
     "type": "git",
     "url": "git+https://github.com/yurkimus/string-tag.git"
   },
+  "keywords": [
+    "string-tag",
+    "to-string-tag",
+    "type",
+    "type-check",
+    "typeof",
+    "type-of",
+    "kind-of",
+    "is-type",
+    "object-prototype-tostring",
+    "esm"
+  ],
   "license": "MIT",
   "author": "yurkimus@gmail.com",
   "exports": {
